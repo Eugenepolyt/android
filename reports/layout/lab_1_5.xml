@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RadioGroup
+        android:layout_width="@dimen/in_dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/b" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/c" />
+    </RadioGroup>
+
+    <TextView
+        android:background="@drawable/gradient"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/lab1_1"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background=""
+        android:text="@string/button1"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>
