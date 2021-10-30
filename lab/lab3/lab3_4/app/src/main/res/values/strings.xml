@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">lab3_4</string>
+    <string name="to_second_activity">To Second Activity</string>
+    <string name="first_activity">First Activity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="to_third_activity">To third activity</string>
+    <string name="to_first_activity">To First Activity</string>
+    <string name="third_activity">Third Activity</string>
+    <string name="activityabout">ActivityAbout</string>
+    <string name="image">image</string>
+    <string name="to_about">To about</string>
+    <string name="text">Значимость этих проблем настолько очевидна, что социально-экономическое развитие обеспечивает широкому кругу специалистов участие в формировании системы масштабного изменения ряда параметров. Соображения высшего порядка, а также социально-экономическое развитие обеспечивает актуальность системы масштабного изменения ряда параметров! Значимость этих проблем настолько очевидна, что сложившаяся структура организации создаёт предпосылки качественно новых шагов для системы масштабного изменения ряда параметров. Значимость этих проблем настолько очевидна, что постоянное информационно-техническое обеспечение нашей деятельности требует от нас системного анализа дальнейших направлений развитая системы массового участия! Практический опыт показывает, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развитая системы массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции обеспечивает широкому кругу специалистов участие в формировании направлений прогрессивного развития. Равным образом выбранный нами инновационный путь способствует повышению актуальности дальнейших направлений развития проекта.</string>
+    <string name="start_psychological_test">Start psychological test</string>
+    <string name="cat">Котики</string>
+    <string name="dog">Собачки</string>
+    <string name="whatsbetter">Что лучше котики или собачки?</string>
+    <string name="nextQuestion">Следующий вопрос</string>
+    <string name="killPeople">Могли бы вы убить человека?</string>
+    <string name="yes">да</string>
+    <string name="ofc">конечно</string>
+</resources>
