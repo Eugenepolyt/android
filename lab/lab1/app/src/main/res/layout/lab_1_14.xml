@@ -29,7 +29,7 @@
         android:autofillHints="password"
         android:gravity="start"
         android:hint="@string/type_password"
-        android:textColorHint="@color/black"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="@color/black" />
 
 </LinearLayout>
