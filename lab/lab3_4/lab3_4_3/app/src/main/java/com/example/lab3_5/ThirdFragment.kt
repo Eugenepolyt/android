@@ -8,14 +8,15 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.lab3_5.databinding.FragmentThirdBinding
 
-class ThirdFragment : Fragment() {
+
+class ThirdFragment: Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         val binding = FragmentThirdBinding.inflate(layoutInflater)
-
         val navController = findNavController()
 
         binding.bnToSecond.setOnClickListener {
@@ -25,14 +26,6 @@ class ThirdFragment : Fragment() {
         binding.bnToFirst.setOnClickListener {
             navController.navigate(R.id.action_thirdFragment_to_firstFragment)
         }
-
-        binding.navView.setOnNavigationItemReselectedListener {
-            when(it.itemId) {
-                R.id.about -> navController.navigate(R.id.global_about)
-            }
-        }
-
         return binding.root
     }
-
 }

@@ -1,7 +1,6 @@
 package com.example.lab3_5
 import android.content.pm.ActivityInfo
 import androidx.lifecycle.Lifecycle
-import androidx.test.core.app.launchActivity
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.Espresso.pressBackUnconditionally
 import androidx.test.espresso.action.ViewActions.click
@@ -59,13 +58,6 @@ class NavigationTest {
         sleep(500)
     }
 
-    @Test
-    fun testAbout() {
-        launchActivity<MainActivity>()
-        openAbout()
-        onView(withId(R.id.activity_about))
-            .check(matches(isDisplayed()))
-    }
 
     // ---------------------------- Check backstack ----------------------------
 
@@ -91,8 +83,6 @@ class NavigationTest {
         up()
         onScreen(R.id.fragment1)
         dne(R.id.activity_about)
-        pressBackUnconditionally()
-        assertTrue(activityScenarioRule.scenario.state == Lifecycle.State.DESTROYED)
     }
 
     @Test
@@ -142,48 +132,6 @@ class NavigationTest {
         onScreen(R.id.fragment1)
         dne(R.id.fragment2)
         dne(R.id.fragment3)
-    }
-
-    @Test
-    fun backStackTestFifth() {
-        clickById(R.id.bnToSecond)
-        openAbout()
-        onScreen(R.id.activity_about)
-        dne(R.id.fragment1)
-        dne(R.id.fragment2)
-
-        pressBackUnconditionally()
-        up()
-        onScreen(R.id.fragment1)
-        dne(R.id.activity_about)
-        dne(R.id.fragment2)
-
-        clickById(R.id.bnToSecond)
-        clickById(R.id.bnToThird)
-
-        openAbout()
-
-        onScreen(R.id.activity_about)
-        pressBackUnconditionally()
-        onScreen(R.id.fragment3)
-
-        openAbout()
-
-        up()
-        onScreen(R.id.fragment3)
-        dne(R.id.activity_about)
-        up()
-        onScreen(R.id.fragment2)
-
-        openAbout()
-
-        pressBackUnconditionally()
-        onScreen(R.id.fragment2)
-        dne(R.id.activity_about)
-        pressBackUnconditionally()
-        pressBackUnconditionally()
-
-        assertTrue(activityScenarioRule.scenario.state == Lifecycle.State.DESTROYED)
     }
 
     // ---------------------------- Recreating ----------------------------

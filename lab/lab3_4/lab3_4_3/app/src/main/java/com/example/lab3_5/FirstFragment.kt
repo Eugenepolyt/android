@@ -10,27 +10,15 @@ import com.example.lab3_5.databinding.FragmentFirstBinding
 
 
 class FirstFragment : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         val binding = FragmentFirstBinding.inflate(layoutInflater)
-
         val navController = findNavController()
-
         binding.bnToSecond.setOnClickListener {
             navController.navigate(R.id.action_firstFragment_to_secondFragment)
         }
-
-        binding.navView.setOnNavigationItemReselectedListener {
-            when(it.itemId) {
-                R.id.about -> navController.navigate(R.id.global_about)
-            }
-        }
-
         return binding.root
     }
-
-
 }
